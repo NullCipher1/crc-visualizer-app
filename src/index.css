@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--bg:#f4f6fb;--pn:#fff;--tx:#0f172a;--mu:#64748b;--bd:#e2e8f0;--ac:#2563eb;--d:#2563eb;--g:#7c3aed;--x:#ea580c;--z:#64748b;--r:#16a34a;--e:#dc2626;color-scheme:light;box-sizing:border-box;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1020;--pn:#121a2e;--tx:#e5eaf6;--mu:#8b97b5;--bd:#25304d;--ac:#38bdf8;--d:#60a5fa;--g:#a78bfa;--x:#fb923c;--z:#94a3b8;--r:#4ade80;--e:#f87171;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1020;--pn:#121a2e;--tx:#e5eaf6;--mu:#8b97b5;--bd:#25304d;--ac:#38bdf8;--d:#60a5fa;--g:#a78bfa;--x:#fb923c;--z:#94a3b8;--r:#4ade80;--e:#f87171;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+.pn{background:var(--pn);border:1px solid var(--bd);border-radius:14px;padding:14px;min-width:0}
+input[type=text]{width:100%;padding:7px 9px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:14px ui-monospace,Menlo,Consolas,monospace}
+input.bad{border-color:var(--e)}
+.btn{padding:7px 12px;border:1px solid var(--bd);border-radius:9px;background:var(--pn);color:var(--tx);font-weight:600;cursor:pointer;transition:.15s}.btn:hover{border-color:var(--ac);transform:translateY(-1px)}.btn.p{background:var(--ac);border-color:var(--ac);color:#06121f}.btn.on{border-color:var(--ac);color:var(--ac)}.btn:disabled{opacity:.4;cursor:default;transform:none}
+.lab{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu);margin:10px 0 3px;display:block}
+.hint{font-size:11.5px;color:var(--mu)}.er{color:var(--e);font-size:12px}
+.c{min-width:28px;height:32px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--bd);border-radius:6px;font:600 14px ui-monospace,Menlo,monospace;transition:all .3s;margin-right:2px;flex:none}
+.c.d{color:var(--d);border-color:color-mix(in srgb,var(--d) 45%,transparent);background:color-mix(in srgb,var(--d) 10%,transparent)}
+.c.g{color:var(--g);border-color:color-mix(in srgb,var(--g) 55%,transparent);background:color-mix(in srgb,var(--g) 12%,transparent)}
+.c.r{color:var(--r);border-color:color-mix(in srgb,var(--r) 55%,transparent);background:color-mix(in srgb,var(--r) 12%,transparent)}
+.c.z{color:var(--z);background:color-mix(in srgb,var(--z) 12%,transparent)}.c.z0{color:var(--mu);border-style:dashed}
+.c.w{outline:2px solid var(--x);outline-offset:1px}
+.c.x{background:color-mix(in srgb,var(--x) 38%,transparent);color:var(--tx);border-color:var(--x)}
+.c.dim{opacity:.3}.c.e{border-color:transparent;background:none}
+.c.bad{background:color-mix(in srgb,var(--e) 28%,transparent);border-color:var(--e);color:var(--e)}
+.rw{display:flex;align-items:center;margin:6px 0;width:max-content}.rl{width:96px;flex:none;font-size:11px;color:var(--mu);position:sticky;left:0;background:var(--pn);z-index:1}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.fade{animation:in .35s ease}
+.bar{height:6px;border-radius:9px;background:var(--bd);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--d),var(--g));transition:width .3s}
+.tl{width:15px;height:15px;border-radius:50%;border:2px solid;cursor:pointer;padding:0;background:transparent;flex:none}
+.bd{display:inline-block;padding:1px 9px;border-radius:99px;font-size:11px;font-weight:700;border:1px solid var(--ac);color:var(--ac)}
+.res{padding:10px 12px;border-radius:10px;font:600 14px ui-monospace,monospace;word-break:break-all}
+.ok{background:color-mix(in srgb,var(--r) 16%,transparent);border:1px solid var(--r)}.no{background:color-mix(in srgb,var(--e) 16%,transparent);border:1px solid var(--e)}
+nav button{background:none;border:0;color:var(--mu);font-weight:600;padding:6px 10px;cursor:pointer;border-radius:8px}nav button.on{color:var(--ac);background:color-mix(in srgb,var(--ac) 12%,transparent)}
